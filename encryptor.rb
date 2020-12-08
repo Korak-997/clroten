@@ -2,6 +2,8 @@
 require 'progress_bar'
 #Adding option parser
 require 'optparse'
+#Adding Colorize for Coloring Terminal Outputs
+require 'colorize'
 class Encryptor
   def small_letters
     ('a'..'z').to_a
@@ -24,7 +26,9 @@ class Encryptor
       end
       char =~ /[A-Za-z]/ ? encrypted_text << letter_case[(letter_case.index(char) + @code) % letter_case.length].to_s : encrypted_text << char
     end
-    puts encrypted_text
+    puts "=========================================".colorize(:yellow)
+    puts encrypted_text.colorize(:green)
+    puts "=========================================".colorize(:yellow)
   end
   # decryptes a text
   def decrypt_text(text)
