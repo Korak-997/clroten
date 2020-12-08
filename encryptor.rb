@@ -24,9 +24,11 @@ class Encryptor
       end
       char =~ /[A-Za-z]/ ? encrypted_text << letter_case[(letter_case.index(char) + @code) % letter_case.length].to_s : encrypted_text << char
     end
-    puts "=========================================".colorize(:yellow)
+    40.times{print "=".colorize(:yellow)}
+    puts " "
     puts encrypted_text.colorize(:green)
-    puts "=========================================".colorize(:yellow)
+    40.times{print "=".colorize(:yellow)}
+    puts " "
   end
   # decryptes a text
   def decrypt_text(text)
