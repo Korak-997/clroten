@@ -53,3 +53,7 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
 ## Note :
   * The **Encrypted** or **Decrypted** files will be Automatically saved in the the same directory as the tool itself
   * The **Encrypted** or **Decrypted** Text will be automatically shown on the Terminal
+
+------------------------------
+## Contributions :
+  Rightnow **PR**s can be made to the **main** branch and i will happilly merge them after reviewing :)
