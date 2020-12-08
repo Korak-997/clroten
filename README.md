@@ -1,6 +1,15 @@
 # Encryptor
 A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
 
+# Features
+
+* Easy basic Encrypting and Decrypting
+* Based on Cipher Cryptography Methods
+* it works well with
+  * Text files
+  * Single or Multiple Words
+  * Single or Multiple Sentences
+
 # How to Use :
 
 * First you need to Clone or download the Project into ur machine
@@ -32,7 +41,9 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
     or
     $ ruby main.rb --encrypt
     ```
-  * To encrypt a Text or Short Sentence
+  * To encrypt :
+    *  Single or Multiple words
+    *  Single or Multiple Sentences
     ```
     $ ruby main.rb -E
     or
@@ -44,7 +55,9 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
     or
     $ ruby main.rb --decrypt
     ```
-  * To decrypt a Text or Short sentence
+  * To decrypt :
+    *  Single or Multiple words
+    *  Single or Multiple Sentences
     ```
     $ ruby main.rb -D
     or
