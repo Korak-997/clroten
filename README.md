@@ -18,37 +18,37 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
 * Now you can Use the Tool
   In your Terminal you can use these commands :
   * ```
-    $ ruby encryptor.rb
+    $ ruby main.rb
     or
-    $ ruby encryptor.rb -h
+    $ ruby main.rb -h
     or
-    $ ruby encryptor.rb --help
+    $ ruby main.rb --help
     ```
     This command will show you a list of arguments you can use !
   --------------------------
   * To encrypt a File
     ```
-    $ ruby encryptor.rb -e
+    $ ruby main.rb -e
     or
-    $ ruby encryptor.rb --encrypt
+    $ ruby main.rb --encrypt
     ```
   * To encrypt a Text or Short Sentence
     ```
-    $ ruby encryptor.rb -E
+    $ ruby main.rb -E
     or
-    $ ruby encryptor.rb --E
+    $ ruby main.rb --E
     ```
   * To decrypt a File
     ```
-    $ ruby encryptor.rb -d
+    $ ruby main.rb -d
     or
-    $ ruby encryptor.rb --decrypt
+    $ ruby main.rb --decrypt
     ```
   * To decrypt a Text or Short sentence
     ```
-    $ ruby encryptor.rb -D
+    $ ruby main.rb -D
     or
-    $ ruby encryptor.rb --Decrypt
+    $ ruby main.rb --Decrypt
     ```
 -----------------------------------------
 ## Note :
