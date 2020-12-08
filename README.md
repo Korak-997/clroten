@@ -13,6 +13,7 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
     * Download the Needed Gems
       ```
       $ gem install progress_bar
+      $ gem install colorize
       ```
 * Now you can Use the Tool
   In your Terminal you can use these commands :
