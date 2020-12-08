@@ -38,8 +38,8 @@ class Encryptor
   end
   # encryptes a file
   def encrypt(file, out_name)
-    # checks if the an encrypted or decrypted file already exists it will delete it
-    File.delete(out_name) if File.exist?(out_name)
+    # creates output folder if it is not available
+    FileUtils.mkdir('output') if !Dir.exist?('output')
     file = File.read(file)
     ln = 0
     file.each_line{|l|ln += 1}
@@ -54,7 +54,7 @@ class Encryptor
         end
         char =~ /[A-Za-z]/ ? string << letter_case[(letter_case.index(char) + @code) % letter_case.length].to_s : string << char
       end
-      File.open(out_name, 'a'){|f| f.puts "#{string}"}
+      File.open("./output/#{out_name}", 'a'){|f| f.puts "#{string}"}
       sleep 0.1
       bar.increment!
     end
@@ -63,7 +63,7 @@ class Encryptor
 
   def decrypt(file)
     @code = -@code
-    encrypt(file, "decrypted.txt")
+    encrypt(file, "decrypted#{DateTime.now.to_s}.txt")
     @code = -@code
   end
 end
