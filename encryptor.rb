@@ -17,11 +17,8 @@ class Encryptor
   def encrypt_text(text)
     encrypted_text = ""
     text.each_char do |char|
-      if char =~ /[A-Z]/
-        letter_case = capital_letters
-      elsif char =~ /[a-z]/
-        letter_case = small_letters
-      end
+      letter_case = capital_letters if char =~ /[A-Z]/
+      letter_case = small_letters if char =~ /[a-z]/
       char =~ /[A-Za-z]/ ? encrypted_text << letter_case[(letter_case.index(char) + @code) % letter_case.length].to_s : encrypted_text << char
     end
     40.times{print "=".colorize(:yellow)}
@@ -51,11 +48,8 @@ class Encryptor
       file.each_line do |line|
         string = ""
         line.strip.each_char do |char|
-          if char =~ /[A-Z]/
-            letter_case = capital_letters
-          elsif char =~ /[a-z]/
-            letter_case = small_letters
-          end
+          letter_case = capital_letters if char =~ /[A-Z]/
+          letter_case = small_letters if char =~ /[a-z]/
           char =~ /[A-Za-z]/ ? string << letter_case[(letter_case.index(char) + @code) % letter_case.length].to_s : string << char
         end
         File.open("./output/#{out_name}", 'a'){|f| f.puts "#{string}"}
