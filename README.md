@@ -12,7 +12,7 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
 
 # How to Use :
 
-* First you need to Clone or download the Project into ur machine
+* First you need to Clone or download the Project into your machine
 * Second Make sure that you have Ruby **2.7.1** installed
 * Then run these commands in your Terminal
     * Go to the location where you saved the files
@@ -26,7 +26,7 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
       ```
 * Now you can Use the Tool
   In your Terminal you can use these commands :
-  * ```
+   ```
     $ ruby main.rb
     or
     $ ruby main.rb -h
@@ -62,6 +62,12 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
     $ ruby main.rb -D
     or
     $ ruby main.rb --Decrypt
+    ```
+  * All Files will be saved in a folder called **output** , whenever you like you can remove and all **auto created files** in the folder with
+    ```
+    $ ruby main.rb -c
+    or
+    $ ruby main.rb --clear
     ```
 -----------------------------------------
 ## Note :
