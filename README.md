@@ -33,7 +33,8 @@ A **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
     or
     $ ruby main.rb --help
     ```
-    This command will show you a list of arguments you can use !
+    This command will show you a list of arguments you can use
+
   --------------------------
   * To encrypt a File
     ```
