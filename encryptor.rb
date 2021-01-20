@@ -57,12 +57,14 @@ class Encryptor
         bar.increment!
       end
     end
+    puts "check your file at :"
+    puts "./output/#{out_name}".colorize(:green)
   end
   # decryptes a file
 
   def decrypt(file)
     @code = -@code
-    encrypt(file, "decrypted#{DateTime.now.to_s}.txt")
+    encrypt(file, "decrypted#{DateTime.now}.txt")
     @code = -@code
   end
 end

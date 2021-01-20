@@ -52,7 +52,7 @@ end
 def start()
   options = {}
   OptionParser.new do |opts|
-    opts.banner = "Usage: ruby encryptor.rb [arguments]"
+    opts.banner = "Usage: ruby main.rb [arguments]"
     opts.on("-h", "--help", "Show Informations") do |v|
       puts opts
       exit
