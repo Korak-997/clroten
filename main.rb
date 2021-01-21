@@ -2,6 +2,7 @@
 require 'optparse'
 #Adding encryptor class
 load 'encryptor.rb'
+load 'cl-gui.rb'
 #Adding fileutils for removing the output directory
 require 'fileutils'
 
@@ -50,6 +51,8 @@ def cofirm_deleting
 end
 
 def start()
+  # prints the logo
+  logo()
   options = {}
   OptionParser.new do |opts|
     opts.banner = "Usage: ruby main.rb [arguments]"
