@@ -1,4 +1,4 @@
-# Encryptor
+# Roten
 A simple **Command Line Tool** for **Encrypting** and **Decrypting** Files and Texts
 
 ![Screen Shot from Terminal](./screenshot.png)
